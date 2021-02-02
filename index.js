@@ -15,7 +15,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
 app.use(express.json());
-require('./satrtup/prod')(app)
+require('./startup/prod')(app)
 app.use('/users', usersRoutes);
 app.use('/login', atuhRoutes);
 
